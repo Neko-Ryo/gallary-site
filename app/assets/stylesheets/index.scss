@@ -1,76 +1,57 @@
 // Place all the styles related to the index controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body{
+	margin: 0;
+	color: #333;
+}
+.content-width{
+	width: 1024px;
+	margin: 0 auto;
+}
 .header{
-	position: relative;
+	height: 80px;
 	display: flex;
 	align-items: center;
-	.header-logo{
-		color: white;
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: 1;
+	.site-title{
 		h1{
-			margin-left: 20px;
-			font-size: 24px;
-			font-family: sans-serif;
+			font-family: 'Maven Pro', sans-serif;
 			letter-spacing: 0.2em;
 		}
 	}
 	.header-navi{
-		position: absolute;
-		color: white;
-		top: 0;
-		right: 0;
-		z-index: 1;
 		ul{
-			list-style: none;
 			display: flex;
-			justify-content: right;
+			list-style: none;
+			padding: 0;
+			margin: 0;
 			li{
-				font-family: sans-serif;
-				margin: 0 10px;
-				border-bottom: solid 1px white;
-				letter-spacing: 0.1em;
-				&:hover{
-					opacity: 0.8;
-				}
+				padding-bottom: 5px;
+				margin: 0 20px;
+				border-bottom: solid 2px #333;
 			}
 		}
 	}
 }
-.main-visual{
-	position: relative;
-	.fast-view-image{
+.first-view-image{
+	img{
+		width: 1024px;
+		height: auto;
+	}
+}
+
+// 　-----------------タブレット-----------------
+@media screen and (min-width: 768px) and (max-width: 1024px){
+	.content-width{
+		width: 90vw;
+	}
+	.first-view-image{
 		img{
-			width: 100vw;
-			height: 800px;
+			width: 90vw;
 			height: auto;
-			opacity: 0.8;
 		}
 	}
-	.site-title{
-		position: absolute;
-		top: 30%;
-		right: 0;
-		left: 0;
-		margin: auto;
-		color: white;
-		font-family: monospace;
-		text-align: center;
-		h4{
-			letter-spacing: 0.2em;
-			font-size: 32px;
-			font-weight: bold;
-		}
-		p{
-			font-size: 14px;
-			letter-spacing: 2px;
-			padding: 5px;
-			border: solid 2px white;
-			display: inline-block;
-			opacity: 0.8;
-		}
-	}
+}
+// -----------------スマートフォン-----------------
+@media screen and (max-width: 767px) {
 }
