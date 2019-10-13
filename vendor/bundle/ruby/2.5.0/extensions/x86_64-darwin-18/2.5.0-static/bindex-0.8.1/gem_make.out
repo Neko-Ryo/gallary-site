@@ -1,0 +1,15 @@
+current directory: /Users/tanaka-ryo/workspace/web/vendor/bundle/ruby/2.5.0/gems/bindex-0.8.1/ext/skiptrace
+/Users/tanaka-ryo/.rbenv/versions/2.5.5/bin/ruby -r ./siteconf20191006-27157-wy0l6f.rb extconf.rb
+creating Makefile
+
+current directory: /Users/tanaka-ryo/workspace/web/vendor/bundle/ruby/2.5.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /Users/tanaka-ryo/workspace/web/vendor/bundle/ruby/2.5.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.bundle
+
+current directory: /Users/tanaka-ryo/workspace/web/vendor/bundle/ruby/2.5.0/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20191006-27157-a6lmmt/skiptrace/internal
