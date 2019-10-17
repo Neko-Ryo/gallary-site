@@ -19,7 +19,7 @@ body{
 	.site-title{
 		h1{
 			font-family: 'Maven Pro', sans-serif;
-			letter-spacing: 0.2em;
+			letter-spacing: 0.1em;
 			margin-left: 10px;
 		}
 	}
@@ -77,6 +77,13 @@ body{
 					height: 327px;
 					object-fit: cover;
 					opacity: 0.9;
+					&:hover{
+						-webkit-filter: grayscale(100%);
+						-moz-filter: grayscale(100%);
+						-ms-filter: grayscale(100%);
+						-o-filter: grayscale(100%);
+						filter: grayscale(100%);
+					}
 				}
 				&:first-child{
 					padding-right: 40px;
